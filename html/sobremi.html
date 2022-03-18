@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
     <link rel="shortcut icon" href="../media/Favicon-c.png">
+    <!--Bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Tipografias (Bebas Neue Roboto)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +21,27 @@
 </head>
 <body background="../media/sobremi.png">
    <div class="home">
-       <header>
-            <!--Secciones del menu principal en divs-->
-           <section>
-            <nav>
-                <div class="navegador animate__animated animate__fadeIn">
-                    <div class="logo1"><img class="logo1" src="../media/Sello-firma.png" alt="" width="40px"></div>
-                    <div class="class"><a href="../index.html">HOME</a></div>
-                    <div class="class"><a href="../html/sobremi.html">SOBRE MI</a></div>
-                    <div class="class"><a href="../html/portfolio.html">PORTFOLIO</a></div>
-                    <div class="class"><a href="../html/tienda.html">TIENDA</a></div>
-                    <div class="class"><a href="../html/contacto.html">CONTACTO</a></div>
-                </div>
-            </nav>
-            </section>
-            <div class="bloque1"></div>
-       </header>
+        <header>
+                <!--Secciones del menu principal con Bootsrap-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-none animate__animated animate__fadeIn">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../media/Sello-firma.png" width="45px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav justify-content-end">
+                        <a class="index.html" href="../index.html">INICIO</a>
+                        <a class="./html/sobremi.html" href="../html/sobremi.html">SOBRE MI</a>
+                        <a class="./html/portfolio.html" href="../html/portfolio.html">PORTFOLIO</a>
+                        <a class="./html/tienda.html" href="../html/tienda.html">TIENDA</a>
+                        <a class="./html/contacto.html" href="../html/contacto.html">CONTACTO</a>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+                <div class="bloque1"></div>
+        </header>
        <main>
            <section class="presentacionIlustracion">
                <div>
@@ -50,11 +57,11 @@
            <!--Pnge efecto roto-->
            <div class="bloque3"><img src="../media/Roto.png" alt="" width="100%"></div>
            <section>
-               <div id="Comentarios" class="Seccion">
+               <div id="Comentarios" class="contendiopagina">
                    <!--Info sobre mi-->
                    <br>
                    <br>
-                   <section class="sticker">
+                   <section class="stickerdata">
                     <div class="Foto Yo"><img src="./Imagenes/Foto-mia.png" alt="" width="400px"></div>
                     <div class="Hijo Textosticker">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur adipisci vero voluptate! Molestias illo asperiores adipisci fuga ipsum quasi vitae eaque dolor, pariatur ab, atque voluptas animi repellendus accusamus
@@ -71,7 +78,7 @@
                         <br>
                         Esse aliquid voluptates nihil dolorum ipsum corporis, doloribus deserunt molestiae, est ipsam porro aliquam illum nobis? Illum possimus delectus velit incidunt laudantium ratione amet corrupti, debitis eligendi molestias similique in totam ut sunt dolorem aperiam quos sint aliquid rerum cumque? mea mape Illum possimus del Illum possimus del Illum possimus del Illum possimus del
                     </div>
-                    <br>
+
                     </section>
                </div>
            </section>
@@ -89,7 +96,7 @@
                 </div>
            </nav>
        </footer>
-        
-    </body>
-   </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    </div>
+</body>
 </html>
