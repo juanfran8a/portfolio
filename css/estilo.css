@@ -5,68 +5,63 @@
 
 body {
   background-attachment: fixed;
-  background-color: #757575; }
-
-.navbar {
-  width: 87%;
-  margin: 0 auto;
-  margin-top: 50px;
-  font-size: 10px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center; }
-
-.logo1 {
-  flex-grow: 1;
-  justify-self: left;
-  width: 45px; }
-
-a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: #f8f7f1;
-  font-size: 18px;
-  align-items: center;
-  padding: 30px; }
+  background-color: #000000; }
+  body .navbar {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; }
+  body .logo1 {
+    flex-grow: 1;
+    justify-self: left;
+    width: 45px; }
+  body a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #f8f7f1;
+    font-size: 18px;
+    align-items: center;
+    padding: 40px; }
 
 .bloque1 {
-  height: 510px; }
+  height: 490px; }
 
 .bloque1b {
-  height: 540px; }
+  height: 520px; }
 
 .presentacionIlustracion {
   text-align: center; }
-
-.tituloIlustracion {
-  font-family: "Bebas Neue", cursive;
-  color: #fffbf6;
-  font-size: 90px;
-  padding: 0, 7%;
-  height: 5%;
-  line-height: 98%;
-  word-spacing: 5px;
-  letter-spacing: 2px; }
-
-.ira {
-  width: 500px;
-  font-size: 17px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  padding: 12px;
-  border: solid #e0f1d8 3px;
-  border-radius: 50px;
-  background-color: #008e9099; }
+  .presentacionIlustracion .tituloIlustracion {
+    font-family: "Bebas Neue", cursive;
+    color: #f8f7f1;
+    font-size: 90px;
+    padding: 1%;
+    height: 5%;
+    line-height: 98%;
+    word-spacing: 5px;
+    letter-spacing: 2px; }
+  .presentacionIlustracion .ira {
+    width: 500px;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 14px;
+    border: solid #e0f1d8 3px;
+    border-radius: 50px;
+    background-color: #008e9099; }
 
 .bloque2 {
-  height: 130px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-end; }
 
 .bloque2b {
-  height: 92px;
+  height: 86px;
   display: flex;
   justify-content: center;
   align-items: flex-end; }
@@ -83,58 +78,52 @@ a {
   padding: 3%;
   text-align: center;
   font-family: "Roboto", sans-serif; }
-
-.stickerdata {
-  width: 50%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1f 1f;
-  gap: 20px;
-  grid-template-areas: "a b" "cd cd"; }
-
-.cd {
-  grid-area: cd; }
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  color: #00504d;
-  font-size: 30px;
-  padding: 1rem; }
-
-.card-title {
-  font-family: "Roboto", sans-serif;
-  color: #00504d;
-  font-size: 30px; }
-
-p {
-  padding: 5px;
-  color: #706a63; }
+  .contendiopagina .stickerdata {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1f;
+    gap: 20px;
+    grid-template-areas: "a b" "cd cd"; }
+  .contendiopagina .cd {
+    grid-area: cd; }
+  .contendiopagina h1 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    color: #00504d;
+    font-size: 30px;
+    padding: 1rem; }
+  .contendiopagina .card-title {
+    font-family: "Roboto", sans-serif;
+    color: #00504d;
+    font-size: 30px; }
+  .contendiopagina p {
+    padding: 5px;
+    color: #706a63; }
 
 footer {
   background-color: #706a63;
   padding: 2%;
   text-align: center; }
-
-.agradecimiento {
-  font-family: "Roboto", sans-serif;
-  color: #363534;
-  font-size: 16px; }
-
-.redes {
-  list-style: none;
-  padding: 12px; }
-
-li {
-  display: inline-block;
-  font-size: 1rem;
-  margin: 3px 2px;
-  align-items: center; }
+  footer .agradecimiento {
+    font-family: "Roboto", sans-serif;
+    color: #363534;
+    font-size: 16px; }
+  footer .redes {
+    list-style: none;
+    padding: 12px; }
+  footer li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 3px 2px;
+    align-items: center; }
 
 @media screen and (max-width: 768px) {
   .fondo {
-    background-attachment: fixed; }
+    background-attachment: center; }
   .stickerdata {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

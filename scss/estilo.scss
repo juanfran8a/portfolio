@@ -1,5 +1,30 @@
 $bgcolor: #706a63;
 
+$encabezados: (
+  xl: #f8f7f1,
+  l: #00504d,
+  s: #363534,
+);
+
+$xl: map-get($encabezados, xl);
+$l: map-get($encabezados, l);
+$s: map-get($encabezados, s);
+
+@mixin div {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin tituloIlustracion {
+  font-family: "Bebas Neue", cursive;
+  color: $xl;
+  font-size: 90px;
+  padding: 1%;
+  height: 5%;
+  line-height: 98%;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,73 +32,68 @@ $bgcolor: #706a63;
 }
 body {
   background-attachment: fixed;
-  background-color: #757575;
-}
-.navbar {
-  width: 87%;
-  margin: 0 auto;
-  margin-top: 50px;
-  font-size: 10px;
-
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-.logo1 {
-  flex-grow: 1;
-  justify-self: left;
-  width: 45px;
-}
-a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: #f8f7f1;
-  font-size: 18px;
-  align-items: center;
-  padding: 30px;
+  background-color: #000000;
+  .navbar {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 10px;
+  
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo1 {
+    flex-grow: 1;
+    justify-self: left;
+    width: 45px;
+  }
+  a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #f8f7f1;
+    font-size: 18px;
+    align-items: center;
+    padding: 40px;
+  }
 }
 .bloque1 {
-  height: 510px;
+  height: 490px;
 }
 .bloque1b {
-  height: 540px;
+  height: 520px;
 }
 .presentacionIlustracion {
   text-align: center;
+  .tituloIlustracion {
+    @include tituloIlustracion;
+  }
+  .ira {
+    width: 500px;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 14px;
+    border: solid #e0f1d8 3px;
+    border-radius: 50px;
+    background-color: #008e9099;
+  }
 }
-.tituloIlustracion {
-  font-family: "Bebas Neue", cursive;
-  color: rgb(255, 251, 246);
-  font-size: 90px;
-  padding: 0, 7%;
-  height: 5%;
-  line-height: 98%;
-  word-spacing: 5px;
-  letter-spacing: 2px;
-}
-.ira {
-  width: 500px;
-  font-size: 17px;
-  font-family: "Roboto", sans-serif;
-  color: rgb(255, 255, 255);
-  padding: 12px;
-  border: solid #e0f1d8 3px;
-  border-radius: 50px;
-  background-color: #008e9099;
-}
+
 .bloque2 {
-  height: 130px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .bloque2b {
-  height: 92px;
+  height: 86px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
+
 .flechaAbajo {
   width: 90px;
   padding: 20px;
@@ -86,63 +106,53 @@ a {
   padding: 3%;
   text-align: center;
   font-family: "Roboto", sans-serif;
-}
-.stickerdata {
-  width: 50%;
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1f 1f;
-  gap: 20px;
-  grid-template-areas:
-    "a b"
-    "cd cd";
-}
-.cd {
-  grid-area: cd;
-}
-h1 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  color: #00504d;
-  font-size: 30px;
-  padding: 1rem;
-}
-.card-title {
-  font-family: "Roboto", sans-serif;
-  color: #00504d;
-  font-size: 30px;
+  .stickerdata {
+    width: 900px;
+    margin: auto;
+    @include div;
+    }
+  h1 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    color: $l;
+    font-size: 30px;
+    padding: 1rem;
+  }
+  .card-title {
+    font-family: "Roboto", sans-serif;
+    color: $l;
+    font-size: 30px;
+  }
+  p {
+    color: $bgcolor;
+  }
 }
 
-p {
-  padding: 5px;
-  color: $bgcolor;
-}
 footer {
   background-color: #706a63;
   padding: 2%;
   text-align: center;
+  .agradecimiento {
+    font-family: "Roboto", sans-serif;
+    color: $s;
+    font-size: 16px;
+  }
+  .redes {
+    list-style: none;
+    padding: 12px;
+  }
+  li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 3px 2px;
+    align-items: center;
+  }
 }
-.agradecimiento {
-  font-family: "Roboto", sans-serif;
-  color: #363534;
-  font-size: 16px;
-}
-.redes {
-  list-style: none;
-  padding: 12px;
-}
-li {
-  display: inline-block;
-  font-size: 1rem;
-  margin: 3px 2px;
-  align-items: center;
-}
+
 
 @media screen and (max-width: 768px) {
   .fondo {
-    background-attachment: fixed;
+    background-attachment: center;
   }
   .stickerdata {
     grid-template-columns: 1fr;
@@ -155,7 +165,7 @@ li {
     width: auto;
   }
   .bloque1 {
-    height: 550px;
+    height: 400px;
   }
   .tituloIlustracion {
     padding: 1%;
@@ -165,6 +175,15 @@ li {
   }
   .bloque3 {
     height: 50px;
+  }
+  .contendiopagina{
+  .stickerdata {
+    width: auto;
+  }    
+  }
+  .stickerdragon{
+    width: 300px;
+    align-self: center;
   }
   footer {
     padding: 4%;
