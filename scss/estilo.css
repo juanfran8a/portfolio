@@ -230,6 +230,12 @@ footer .aredes:hover {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .fotomia {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   .complete {
     width: 300px;
     -ms-flex-item-align: center;
