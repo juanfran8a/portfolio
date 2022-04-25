@@ -18,10 +18,10 @@
     <!--animacion-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     <!--css-->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../scss/estilo.css">
     <title>Panchizo - Contacto</title>
 </head>
-<body background="../media/contacto.png">
+<body class="bk" background="../media/contacto.png">
        <header>
             <!--Secciones del menu principal con Bootsrap-->
             <nav class="navbar navbar-expand-lg navbar-light bg-none animate__animated animate__fadeIn">
@@ -32,11 +32,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav justify-content-end">
-                    <a class="index.html" href="../index.html">INICIO</a>
-                    <a class="./html/sobremi.html" href="../html/sobremi.html">SOBRE MI</a>
-                    <a class="./html/portfolio.html" href="../html/portfolio.html">PORTFOLIO</a>
-                    <a class="./html/tienda.html" href="../html/tienda.html">TIENDA</a>
-                    <a class="./html/contacto.html" href="../html/contacto.html">CONTACTO</a>
+                    <a class="anavbar index.html" href="../index.html">INICIO</a>
+                    <a class="anavbar ./html/sobremi.html" href="../html/sobremi.html">SOBRE MI</a>
+                    <a class="anavbar ./html/portfolio.html" href="../html/portfolio.html">PORTFOLIO</a>
+                    <a class="anavbar ./html/tienda.html" href="../html/tienda.html">TIENDA</a>
+                    <a class="anavbar ./html/contacto.html" href="../html/contacto.html">CONTACTO</a>
                     </div>
                 </div>
                 </div>
@@ -85,18 +85,33 @@
                     <br>
                     <h5 class="emailDirecto">Se pueden enviar mensajes directos a juanfranochoa@gmail.com </h5>
                    </fieldset>
-               </div>
+                   <br>
+                   <div class="container">
+                    <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12 bg-none">
+                        <p>Para ilustración: Full ilustarción, character design, backgrounds y animación</p>
+                        <p>Para diseño: Branding, packaging, flyers y merch </p>
+                        
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-sm-12 col-lg-3 p-3 bg-none">
+                                <img class="imagen" src="../media/Sticker-astro.png" width="300px" alt="">
+                            </div>
+                    </div>
+                </div>
+
            </section>
        </main>
        <footer>
            <!--Footer con agradecimiento y redes-->
-           <h5 class="agradecimiento">Gracias por pasar a visitar, seguime en:</h5>
+           <h5 class="agradecimiento">Gracias por pasarte a ver la página, ya que estas seguime en mis redes:</h5>
            <nav class="redes">
                <div>
                    <ul class="redes">
-                       <li><a href="https://www.instagram.com/panchizo/?hl=es-la" target="https://www.instagram.com/panchizo/?hl=es-la">Instagram</a></li>
-                       <li><a href="https://www.behance.net/FranciscoOchoa" target="https://www.behance.net/FranciscoOchoa">Behance</a></li>
-                       <li><a href="https://www.artstation.com/panchizo" target="https://www.artstation.com/panchizo">Artstation</a></li>
+                    <li><a class="aredes" href="https://www.instagram.com/panchizo/?hl=es-la" target="https://www.instagram.com/panchizo/?hl=es-la"><img src="../media/logoredes/logoinstagram.png" alt="" width="25px"></a></li>
+                    <li><a class="aredes" href="https://www.behance.net/FranciscoOchoa" target="https://www.behance.net/FranciscoOchoa"><img src="../media/logoredes/logobehance.png" alt="" width="25px"></a></li>
+                    <li><a class="aredes" href="https://www.artstation.com/panchizo" target="https://www.artstation.com/panchizo"><img src="../media/logoredes/logoartstation.png" alt="" width="25px"></a></li>
                    </ul>
                 </div>
            </nav>

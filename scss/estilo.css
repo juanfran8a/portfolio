@@ -47,6 +47,14 @@ body a {
   padding: 40px;
 }
 
+body .anavbar:hover {
+  color: #363534;
+}
+
+body .navbar-brand:hover {
+  opacity: 85%;
+}
+
 .bloque1 {
   height: 490px;
 }
@@ -79,6 +87,10 @@ body a {
   border: solid #e0f1d8 3px;
   border-radius: 50px;
   background-color: #008e9099;
+}
+
+.presentacionIlustracion .ira:hover {
+  background-color: #000000;
 }
 
 .bloque2 {
@@ -124,7 +136,7 @@ body a {
 }
 
 .contendiopagina .stickerdata {
-  width: 900px;
+  width: 910px;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -156,7 +168,7 @@ footer {
 footer .agradecimiento {
   font-family: "Roboto", sans-serif;
   color: #363534;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 footer .redes {
@@ -173,9 +185,20 @@ footer li {
           align-items: center;
 }
 
+footer .aredes {
+  padding: 1rem;
+}
+
+footer .aredes:hover {
+  opacity: 70%;
+}
+
 @media screen and (max-width: 768px) {
   .fondo {
     background-attachment: center;
+  }
+  .bk {
+    background-position: center;
   }
   .stickerdata {
     -ms-grid-columns: 1fr;
@@ -202,6 +225,12 @@ footer li {
     width: auto;
   }
   .stickerdragon {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .complete {
     width: 300px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;

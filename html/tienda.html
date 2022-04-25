@@ -18,10 +18,10 @@
     <!--animacion-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     <!--css-->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../scss/estilo.css">
     <title>Panchizo - Tienda</title>
 </head>
-<body background="../media/tienda.png">
+<body class="bk" background="../media/tienda.png">
    <div class="home">
        <header>
             <!--Secciones del menu principal con Bootsrap-->
@@ -33,11 +33,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav justify-content-end">
-                    <a class="index.html" href="../index.html">INICIO</a>
-                    <a class="./html/sobremi.html" href="../html/sobremi.html">SOBRE MI</a>
-                    <a class="./html/portfolio.html" href="../html/portfolio.html">PORTFOLIO</a>
-                    <a class="./html/tienda.html" href="../html/tienda.html">TIENDA</a>
-                    <a class="./html/contacto.html" href="../html/contacto.html">CONTACTO</a>
+                    <a class="anavbar index.html" href="../index.html">INICIO</a>
+                    <a class="anavbar ./html/sobremi.html" href="../html/sobremi.html">SOBRE MI</a>
+                    <a class="anavbar ./html/portfolio.html" href="../html/portfolio.html">PORTFOLIO</a>
+                    <a class="anavbar ./html/tienda.html" href="../html/tienda.html">TIENDA</a>
+                    <a class="anavbar ./html/contacto.html" href="../html/contacto.html">CONTACTO</a>
                     </div>
                 </div>
                 </div>
@@ -65,6 +65,9 @@
                        <h1 class="Titulo">TIENDA</h1>
                     </legend> 
                     <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-lg-12 bg-none">
+                          <h5>Tienda no habilitada … aún 😏</h5>
+                        </div>
                           <div class="card border-light p-3 m-3" style="width: 18rem;">
                             <img src="../media/tienda/remeastro1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -76,7 +79,7 @@
                           <div class="card border-light p-3 m-3" style="width: 18rem;">
                             <img src="../media/tienda/remeradragon1.png" class="card-img-top" alt="...">
                             <div class="card-body border-none">
-                              <h5 class="card-title">Dragon</h5>
+                              <h5 class="card-title">Dragón</h5>
                               <p class="card-text">Remera unisex dragon cervecero.</p>
                               <a href="#" class="btn btn-secondary">Ver producto</a>
                             </div>
@@ -93,43 +96,70 @@
                     <br>
                     <div class="row justify-content-center">
                         <div class="card border-light p-3 m-3" style="width: 18rem;">
-                            <img src="../media/tienda/remeastro1.jpg" class="card-img-top" alt="...">
+                            <img src="../media/tienda/fantasmastickertienda.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Astro</h5>
-                              <p class="card-text">Remera unisex astronauta con fernet.</p>
+                              <h5 class="card-title">Sticker fantasma</h5>
+                              <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
                               <a href="#" class="btn btn-secondary">Ver producto</a>
                             </div>
                           </div>
                           <div class="card border-light p-3 m-3" style="width: 18rem;">
-                            <img src="../media/tienda/remeradragon1.png" class="card-img-top" alt="...">
+                            <img src="../media/tienda/colchonstickertienda.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Dragon</h5>
-                              <p class="card-text">Remera unisex dragon cervecero.</p>
+                              <h5 class="card-title">Sticker pizza y flotar</h5>
+                              <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
                               <a href="#" class="btn btn-secondary">Ver producto</a>
                             </div>
                           </div>
                           <div class="card border-light p-3 m-3" style="width: 18rem;">
-                            <img src="../media/tienda/remeravaca1.png" class="card-img-top" alt="...">
+                            <img src="../media/tienda/florstickertienda.png" class="card-img-top" alt="...">
                             <div class="card-body bg-none">
-                              <h5 class="card-title">Abduzcan</h5>
-                              <p class="card-text">Remera unisex vaca abducida.</p>
+                              <h5 class="card-title">Sticker flor en la bañera</h5>
+                              <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
                               <a href="#" class="btn btn-secondary">Ver producto</a>
                             </div>
                           </div>
                     </div>
+                    <br>
+                    <div class="row justify-content-center">
+                      <div class="card border-light p-3 m-3" style="width: 18rem;">
+                          <img src="../media/tienda/vacastickertienda.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sticker abduzcan</h5>
+                            <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
+                            <a href="#" class="btn btn-secondary">Ver producto</a>
+                          </div>
+                        </div>
+                        <div class="card border-light p-3 m-3" style="width: 18rem;">
+                          <img src="../media/tienda/astrostickertienda.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sticker astronauta</h5>
+                            <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
+                            <a href="#" class="btn btn-secondary">Ver producto</a>
+                          </div>
+                        </div>
+                        <div class="card border-light p-3 m-3" style="width: 18rem;">
+                          <img src="../media/tienda/camarastickertienda.png" class="card-img-top" alt="...">
+                          <div class="card-body bg-none">
+                            <h5 class="card-title">Sticker camara VHS</h5>
+                            <p class="card-text">Vinilo blanco adhesivo de 8cm x 8cm.</p>
+                            <a href="#" class="btn btn-secondary">Ver producto</a>
+                          </div>
+                        </div>
+                  </div>
 
                </div>
            </section>
        </main>
        <footer>
            <!--Footer con agradecimiento y redes-->
-           <h5 class="agradecimiento">Gracias por pasar a visitar, seguime en:</h5>
+           <h5 class="agradecimiento">Gracias por pasarte a ver la página, ya que estas seguime en mis redes:</h5>
            <nav class="redes">
                <div>
                    <ul class="redes">
-                       <li><a href="https://www.instagram.com/panchizo/?hl=es-la" target="https://www.instagram.com/panchizo/?hl=es-la">Instagram</a></li>
-                       <li><a href="https://www.behance.net/FranciscoOchoa" target="https://www.behance.net/FranciscoOchoa">Behance</a></li>
-                       <li><a href="https://www.artstation.com/panchizo" target="https://www.artstation.com/panchizo">Artstation</a></li>
+                    <li><a class="aredes" href="https://www.instagram.com/panchizo/?hl=es-la" target="https://www.instagram.com/panchizo/?hl=es-la"><img src="../media/logoredes/logoinstagram.png" alt="" width="25px"></a></li>
+                    <li><a class="aredes" href="https://www.behance.net/FranciscoOchoa" target="https://www.behance.net/FranciscoOchoa"><img src="../media/logoredes/logobehance.png" alt="" width="25px"></a></li>
+                    <li><a class="aredes" href="https://www.artstation.com/panchizo" target="https://www.artstation.com/panchizo"><img src="../media/logoredes/logoartstation.png" alt="" width="25px"></a></li>
                    </ul>
                 </div>
            </nav>

@@ -57,6 +57,12 @@ body {
     align-items: center;
     padding: 40px;
   }
+  .anavbar:hover{
+    color: #363534;
+  }
+  .navbar-brand:hover{
+    opacity: 85%;
+  }
 }
 .bloque1 {
   height: 490px;
@@ -78,6 +84,9 @@ body {
     border: solid #e0f1d8 3px;
     border-radius: 50px;
     background-color: #008e9099;
+  }
+  .ira:hover {
+    background-color: #000000;
   }
 }
 
@@ -107,7 +116,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   .stickerdata {
-    width: 900px;
+    width: 910px;
     margin: auto;
     @include div;
     }
@@ -135,7 +144,7 @@ footer {
   .agradecimiento {
     font-family: "Roboto", sans-serif;
     color: $s;
-    font-size: 16px;
+    font-size: 14px;
   }
   .redes {
     list-style: none;
@@ -147,12 +156,21 @@ footer {
     margin: 3px 2px;
     align-items: center;
   }
+  .aredes{
+    padding: 1rem;
+  }
+  .aredes:hover{
+    opacity: 70%;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
   .fondo {
     background-attachment: center;
+  }
+  .bk{
+    background-position: center;
   }
   .stickerdata {
     grid-template-columns: 1fr;
@@ -184,6 +202,11 @@ footer {
   .stickerdragon{
     width: 300px;
     align-self: center;
+  }
+  .complete{
+    width: 300px;
+    align-self: center;
+
   }
   footer {
     padding: 4%;
